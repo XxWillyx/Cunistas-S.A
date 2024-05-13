@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>carrito</title>
+
+		<link rel="stylesheet" href="admin.css" />
+
+	</head>
+    <body>
+        <header id="header">
+            <div class="titulo">
+            <h1>carrito de compras</h1> 
+            </div>           
+        </header>
+
+        <main>              
+                    <div class="añ">
+                        <h2>Añadir</h2>
+                    </div>
+
+                    <form>
+                        <div class="producto">
+                            <label> nombre del producto</label>
+                            <input type="text" id="productoAñadir" name="nombre del producto">
+                        </div>
+                        <div class="vlp">
+                            <label >valor del producto</label>
+                            <input type="number" id="ValorAñadir">
+                        </div>
+                    <div class="ex">
+                        <label> existencia</label>
+                        <input type="number" id="existenciaAñadir">
+                    </div>
+                    <div class="boton">
+                        <input class="button" type="button" id="bottonAñadir" value="Añadir">
+                    </div>    
+                    </form>
+                </div>
+            
+            
+                    <div class="editar">
+                        <h2>editar</h2>
+
+                        <form>
+                            <label>nombre del producto</label>
+                            <select  id="producto editar">
+                                <option value="">------------</option>
+                            </select>
+
+                            <label>Atributo</label>
+                            <select id="AtributoEditar">
+                            <option value="">------------</option>
+                        </select>
+
+                            <label> Nuevo Valor</label>
+                            <input type="text" id="nuevoAtributo">
+
+                            <input class="button" type="button" id="botonEditar" value="Editar">
+                    </form>
+                    </div>
+                
+                    </div>
+                    <div class="eliminar">
+                        <h2>eliminar</h2>
+                        <form>
+                            <label>nombre del producto</label>
+                            <select id="productoEliminar">
+                                <option value="">------------</option>
+                            </select>
+                            <input class="button" type="button" id="botonEliminar" value="Eliminar">
+                        </form>
+                        <div>
+                        </div>
+
+                        mostral el mensaje
+                        <div class="contenedorMensaje">
+                            <div id="Mensaje"></div>
+
+                        </div>
+                        <div class="contenedorProductos">
+                            <h2>productos</h2>
+                            <div class="mostrarProductos" id="mostrarProductos"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+               
+            </div>
+
+                <script rel="admin.js" href="admin.js"></script>    
+        
+            </main>  
+
+        
+    </body>
+</html>
